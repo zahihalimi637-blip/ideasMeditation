@@ -1,6 +1,6 @@
 {
-  "name": "IdeasMeditation",
-  "version": "1.0.0",
+  "name": "ideasMeditation",
+  "version": "1.0.2",
   "description": "",
   "main": "app.js",
   "scripts": {
