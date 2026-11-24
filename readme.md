@@ -88,7 +88,7 @@ Potential directions for future development include:
 
 ## 📜 License
 
-No license has currently been specified for this repository.
+Free to use for personal usage.
 
 ---
 
