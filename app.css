@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#timer, h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 64px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #252a34;
+
+    border: 1px solid #3b4252;
+    border-radius: 8px;
+
+    padding: 12px 28px;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background: #3b4252;
+    border-color: #61afef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(97, 175, 239, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+input {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #e5e9f0;
+
+    background: #1e232d;
+    border: 1px solid #3b4252;
+    border-radius: 8px;
+
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+
+    outline: none;
+    caret-color: #61afef;
+
+    transition: all 0.25s ease;
+}
+
+input::placeholder {
+    color: #7f8999;
+    opacity: 1;
+}
+
+input:hover {
+    border-color: #596579;
+}
+
+input:focus {
+    border-color: #61afef;
+    background: #222834;
+    box-shadow: 0 0 0 3px rgba(97, 175, 239, 0.12);
+}
+
+#writtenNotes {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#writtenNotes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#writtenNotes li {
+    position: relative;
+    background: #f5f7fa;
+    color: #333;
+    padding: 14px 18px 14px 42px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+#writtenNotes li::before {
+    content: "•";
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6366f1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#writtenNotes li:hover {
+    background: #eef2ff;
+    border-color: #c7d2fe;
+    transform: translateX(4px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
